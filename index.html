@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Modern Timer</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="timer" id="timer"></div>
+	<div class="input-container">
+		<input type="number" id="minutes" min="0" placeholder="Min"> :
+		<input type="number" id="seconds" min="0" max="59" placeholder="Sec">
+		<button id="set-time">Set</button>
+	</div>
+	<button class="start">Start</button>
+	<button class="pause">Pause</button>
+	<button class="reset">Reset</button>
+</div>
+
+<audio id="alarm">
+	<source src="beep-25.mp3" type="audio/mp3">
+</audio>
+
+<script src="index.js"></script>
+</body>
+</html>
